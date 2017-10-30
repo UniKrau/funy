@@ -193,28 +193,28 @@ public class TeleData implements Deadline {
 
         if (flag) {
             if (endtime - starttime > value)//1300 950
-                LOG.info("arrival time " + a +
-                        " start offset " + starttime +
-                        " end offset " + endtime +
+                LOG.info( a
+                        +"," + starttime +
+                        ","  + endtime +
                         " TeleData deadline is killed ");
             else {
-                LOG.info("arrival time " + a +
-                        " start offset " + starttime +
-                        " end offset " + endtime +
+                LOG.info( a +
+                        " , " + starttime +
+                        " , " + endtime +
                         " TeleData deadline is finished ");
             }
         } else {
             if (endtime - starttime > normal) {//1000 800
 
-                LOG.info("arrival time " + a +
-                        " start offset " + starttime +
-                        " end offset " + endtime +
+                LOG.info( a +
+                        "," + starttime +
+                        "," + endtime +
                         " Normal TeleData is killed ");
 
             } else {
-                LOG.info("arrival time " + a +
-                        " start offset " + starttime +
-                        " end offset " + endtime +
+                LOG.info( a +
+                        " , " + starttime +
+                        " , " + endtime +
                         " Normal TeleData is finished ");
             }
         }
